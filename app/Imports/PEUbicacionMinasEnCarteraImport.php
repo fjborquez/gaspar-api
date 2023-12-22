@@ -51,6 +51,7 @@ class PEUbicacionMinasEnCarteraImport implements ToModel, WithStartRow
             new Metadata(['key' => 'tipo', 'value' => 'mina']),
             new Metadata(['key' => 'pais', 'value' => 'peru']),
             new Metadata(['key' => 'estado', 'value' => 'en cartera']),
+            new Metadata(['key' => 'source', 'value' => 'Ministerio de Energía y Minas /  Anuarios Estadísticos de Minería'])
         ]);
 
         return $point;
