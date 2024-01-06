@@ -67,6 +67,7 @@ class LatamOilAndGasExtractLocationsImport implements ToModel, WithHeadingRow, W
             new Metadata(['key' => 'country', 'value' => $row['country']]),
             new Metadata(['key' => 'owner', 'value' => is_null($row['owner']) ? '' : $row['owner']]),
             new Metadata(['key' => 'parent', 'value' => is_null($row['parent']) ? '' : $row['parent']]),
+            new Metadata(['key' => 'type', 'value' => is_null($row['fuel_type']) ? '' : $row['fuel_type']]),
         ]);
 
         Metadata::where('value', '')->delete();
