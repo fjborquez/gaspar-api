@@ -20,4 +20,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::middleware(ValidateToken::class)->get('/points', [PointController::class, 'index']);
+Route::get('/points', [PointController::class, 'index']);
